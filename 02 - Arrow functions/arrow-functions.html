@@ -6,29 +6,25 @@
 </head>
 <body>
 <script>
-  const names = ['wes', 'kait', 'lux'];
+  const names = ['michael', 'naely', 'elliot'];
 
-  const fullNames = names.map(function(name) {
-    return `${name} bos`;
+  const fullNames = names.map( ( name ) => {
+    return `${name} schofield`;
   });
 
-  const fullNames2 = names.map((name) => {
-    return `${name} bos`;
+  const fullNames2 = names.map(name => {
+    return `${name} schofield`;
   });
 
-  const fullNames3 = names.map(name => {
-    return `${name} bos`;
-  });
+  const fullNames3 = names.map(name => `${name} schofield` );
 
-  const fullNames4 = names.map(name => `${name} bos`);
+  const fullNames4 = names.map(() => `cool schofield` );
 
-  const fullNames5 = names.map(() => `cool bos`);
+  console.log( fullNames4);
 
-  const sayMyName = (name) => {
-    alert(`Hello ${name}!`)
-  }
+  const sayMyName = (name) => { alert(`Hello ${name}!`)}
+  sayMyName( 'Michael' );
 
-  sayMyName('Wes');
 
 </script>
 </body>
